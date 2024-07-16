@@ -19,6 +19,7 @@ import dev.gato.insideoutnmodels.client.renderer.Worker3Renderer;
 import dev.gato.insideoutnmodels.client.renderer.Worker2Renderer;
 import dev.gato.insideoutnmodels.client.renderer.Worker1Renderer;
 import dev.gato.insideoutnmodels.client.renderer.TNTProjectileRenderer;
+import dev.gato.insideoutnmodels.client.renderer.RedOrbProjRenderer;
 import dev.gato.insideoutnmodels.client.renderer.PouchyRenderer;
 import dev.gato.insideoutnmodels.client.renderer.Police3Renderer;
 import dev.gato.insideoutnmodels.client.renderer.Police2Renderer;
@@ -46,5 +47,6 @@ public class InsideoutnmodelsModEntityRenderers {
 		event.registerEntityRenderer(InsideoutnmodelsModEntities.ENNUI.get(), EnnuiRenderer::new);
 		event.registerEntityRenderer(InsideoutnmodelsModEntities.POUCHY.get(), PouchyRenderer::new);
 		event.registerEntityRenderer(InsideoutnmodelsModEntities.TNT_PROJECTILE.get(), TNTProjectileRenderer::new);
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.RED_ORB_PROJ.get(), context -> new RedOrbProjRenderer(context, "redorb"));
 	}
 }

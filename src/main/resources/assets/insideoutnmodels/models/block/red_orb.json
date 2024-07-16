@@ -1,0 +1,8 @@
+{
+  "parent": "insideoutnmodels:custom/blockorb",
+  "textures": {
+    "all": "insideoutnmodels:blocks/redorb",
+    "particle": "insideoutnmodels:blocks/redorb",
+    "1": "insideoutnmodels:blocks/redorb"
+  }
+}

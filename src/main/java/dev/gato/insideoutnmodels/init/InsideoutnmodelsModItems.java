@@ -4,15 +4,19 @@
  */
 package dev.gato.insideoutnmodels.init;
 
+import dev.gato.custom.BlockItems.RedOrbItem;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 
 import dev.gato.insideoutnmodels.item.TNTProjectileItem;
 import dev.gato.insideoutnmodels.item.TNTItem;
+import dev.gato.insideoutnmodels.item.RedOrbProjItem;
 import dev.gato.insideoutnmodels.InsideoutnmodelsMod;
 
 public class InsideoutnmodelsModItems {
@@ -48,4 +52,9 @@ public class InsideoutnmodelsModItems {
 			() -> new ForgeSpawnEggItem(InsideoutnmodelsModEntities.POUCHY, -1, -1, new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
 	public static final RegistryObject<Item> TNT = REGISTRY.register("tnt", () -> new TNTItem());
 	public static final RegistryObject<Item> TNT_PROJECTILE = REGISTRY.register("tnt_projectile", () -> new TNTProjectileItem());
+	public static final RegistryObject<Item> RED_ORB_PROJ = REGISTRY.register("red_orb_proj", () -> new RedOrbProjItem());
+
+	// * ORBS:
+
+	public static final RegistryObject<Item> RED_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.RED_ORB.getId().getPath(), () -> new RedOrbItem(InsideoutnmodelsModBlocks.RED_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
 }

@@ -305,22 +305,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -340,6 +324,40 @@
         ]
       },
       "path": "~/TNT"
+    },
+    {
+      "name": "RedOrb",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_orb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/insideoutnmodels/models/block/red_orb.json",
+          "src/main/java/dev/gato/insideoutnmodels/block/RedOrbBlock.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/red_orb.json",
+          "src/main/resources/assets/insideoutnmodels/blockstates/red_orb.json"
+        ]
+      },
+      "path": "~/Orbs"
+    },
+    {
+      "name": "RedOrbProj",
+      "type": "rangeditem",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_orb_proj",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/insideoutnmodels/models/item/red_orb_proj.json",
+          "src/main/java/dev/gato/insideoutnmodels/item/RedOrbProjItem.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/RedOrbProjRenderer.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/RedOrbProjEntity.java"
+        ]
+      },
+      "path": "~/Orbs"
     }
   ],
   "variable_elements": [],
@@ -359,6 +377,7 @@
       "entity.insideoutnmodels.worker_3": "Worker 3",
       "entity.insideoutnmodels.worker_2": "Worker 2",
       "entity.insideoutnmodels.worker_1": "Worker 1",
+      "item.insideoutnmodels.red_orb_proj": "Red Orb Proj",
       "item.insideoutnmodels.worker_9_spawn_egg": "Worker 9 Spawn Egg",
       "item.insideoutnmodels.worker_2_spawn_egg": "Worker 2 Spawn Egg",
       "item.insideoutnmodels.police_3_spawn_egg": "Police 3 Spawn Egg",
@@ -367,6 +386,7 @@
       "item.insideoutnmodels.bloofy_spawn_egg": "Bloofy Spawn Egg",
       "item.insideoutnmodels.ennui_spawn_egg": "Ennui Spawn Egg",
       "item.insideoutnmodels.worker_4_spawn_egg": "Worker 4 Spawn Egg",
+      "block.insideoutnmodels.red_orb": "Red Orb",
       "item.insideoutnmodels.worker_1_spawn_egg": "Worker 1 Spawn Egg",
       "entity.insideoutnmodels.worker_7": "Worker 7",
       "entity.insideoutnmodels.ennui": "Ennui",
@@ -430,7 +450,7 @@
     "currentGenerator": "forge-1.18.2",
     "credits": "Mod developed by GatoDev",
     "modElementsPackage": "dev.gato.insideoutnmodels",
-    "lockBaseModFiles": false
+    "lockBaseModFiles": true
   },
   "mcreatorVersion": 202300110610
 }

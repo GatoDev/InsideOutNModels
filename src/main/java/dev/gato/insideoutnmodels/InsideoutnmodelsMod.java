@@ -36,6 +36,7 @@ import dev.gato.insideoutnmodels.init.InsideoutnmodelsModTabs;
 import dev.gato.insideoutnmodels.init.InsideoutnmodelsModParticleTypes;
 import dev.gato.insideoutnmodels.init.InsideoutnmodelsModItems;
 import dev.gato.insideoutnmodels.init.InsideoutnmodelsModEntities;
+import dev.gato.insideoutnmodels.init.InsideoutnmodelsModBlocks;
 
 @Mod("insideoutnmodels")
 public class InsideoutnmodelsMod {
@@ -48,7 +49,7 @@ public class InsideoutnmodelsMod {
 	public InsideoutnmodelsMod() {
 		InsideoutnmodelsModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		InsideoutnmodelsModBlocks.REGISTRY.register(bus);
 		InsideoutnmodelsModItems.REGISTRY.register(bus);
 		InsideoutnmodelsModEntities.REGISTRY.register(bus);
 

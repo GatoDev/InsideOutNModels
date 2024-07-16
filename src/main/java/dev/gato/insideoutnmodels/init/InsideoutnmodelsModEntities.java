@@ -26,6 +26,7 @@ import dev.gato.insideoutnmodels.entity.Worker3Entity;
 import dev.gato.insideoutnmodels.entity.Worker2Entity;
 import dev.gato.insideoutnmodels.entity.Worker1Entity;
 import dev.gato.insideoutnmodels.entity.TNTProjectileEntity;
+import dev.gato.insideoutnmodels.entity.RedOrbProjEntity;
 import dev.gato.insideoutnmodels.entity.PouchyEntity;
 import dev.gato.insideoutnmodels.entity.Police3Entity;
 import dev.gato.insideoutnmodels.entity.Police2Entity;
@@ -99,6 +100,8 @@ public class InsideoutnmodelsModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<TNTProjectileEntity>> TNT_PROJECTILE = register("projectile_tnt_projectile",
 			EntityType.Builder.<TNTProjectileEntity>of(TNTProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(TNTProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<RedOrbProjEntity>> RED_ORB_PROJ = register("projectile_red_orb_proj",
+			EntityType.Builder.<RedOrbProjEntity>of(RedOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(RedOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
