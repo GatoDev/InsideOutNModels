@@ -1,0 +1,276 @@
+{
+  "mod_elements": [
+    {
+      "name": "InsideOutModelsTAB",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inside_out_models_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Worker1",
+      "type": "animatedentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worker_1",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/entity/Worker1Entity.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Worker1Model.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Worker1Renderer.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/worker_1_spawn_egg.json"
+        ]
+      },
+      "path": "~/Workers"
+    },
+    {
+      "name": "Worker2",
+      "type": "animatedentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worker_2",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Worker2Model.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/worker_2_spawn_egg.json",
+          "src/main/java/dev/gato/insideoutnmodels/entity/Worker2Entity.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Worker2Renderer.java"
+        ]
+      },
+      "path": "~/Workers"
+    },
+    {
+      "name": "Worker3",
+      "type": "animatedentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worker_3",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Worker3Renderer.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/worker_3_spawn_egg.json",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Worker3Model.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/Worker3Entity.java"
+        ]
+      },
+      "path": "~/Workers"
+    },
+    {
+      "name": "Worker4",
+      "type": "animatedentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worker_4",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Worker4Renderer.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/worker_4_spawn_egg.json",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Worker4Model.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/Worker4Entity.java"
+        ]
+      },
+      "path": "~/Workers"
+    },
+    {
+      "name": "Worker5",
+      "type": "animatedentity",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worker_5",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Worker5Model.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Worker5Renderer.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/worker_5_spawn_egg.json",
+          "src/main/java/dev/gato/insideoutnmodels/entity/Worker5Entity.java"
+        ]
+      },
+      "path": "~/Workers"
+    },
+    {
+      "name": "Worker6",
+      "type": "animatedentity",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worker_6",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Worker6Renderer.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Worker6Model.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/worker_6_spawn_egg.json",
+          "src/main/java/dev/gato/insideoutnmodels/entity/Worker6Entity.java"
+        ]
+      },
+      "path": "~/Workers"
+    },
+    {
+      "name": "Worker7",
+      "type": "animatedentity",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worker_7",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/entity/Worker7Entity.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Worker7Model.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/worker_7_spawn_egg.json",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Worker7Renderer.java"
+        ]
+      },
+      "path": "~/Workers"
+    },
+    {
+      "name": "Worker8",
+      "type": "animatedentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worker_8",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/insideoutnmodels/models/item/worker_8_spawn_egg.json",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Worker8Model.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/Worker8Entity.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Worker8Renderer.java"
+        ]
+      },
+      "path": "~/Workers"
+    },
+    {
+      "name": "Worker9",
+      "type": "animatedentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worker_9",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Worker9Model.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Worker9Renderer.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/worker_9_spawn_egg.json",
+          "src/main/java/dev/gato/insideoutnmodels/entity/Worker9Entity.java"
+        ]
+      },
+      "path": "~/Workers"
+    },
+    {
+      "name": "Police1",
+      "type": "animatedentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "police_1",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/entity/Police1Entity.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Police1Model.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Police1Renderer.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/police_1_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Police2",
+      "type": "animatedentity",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "police_2",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/entity/Police2Entity.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Police2Model.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Police2Renderer.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/police_2_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Police3",
+      "type": "animatedentity",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "police_3",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/Police3Renderer.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/police_3_spawn_egg.json",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/Police3Model.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/Police3Entity.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.insideoutnmodels.worker_7_spawn_egg": "Worker 7 Spawn Egg",
+      "entity.insideoutnmodels.worker_3": "Worker 3",
+      "entity.insideoutnmodels.worker_2": "Worker 2",
+      "entity.insideoutnmodels.worker_1": "Worker 1",
+      "item.insideoutnmodels.worker_9_spawn_egg": "Worker 9 Spawn Egg",
+      "item.insideoutnmodels.worker_2_spawn_egg": "Worker 2 Spawn Egg",
+      "item.insideoutnmodels.police_3_spawn_egg": "Police 3 Spawn Egg",
+      "item.insideoutnmodels.worker_4_spawn_egg": "Worker 4 Spawn Egg",
+      "item.insideoutnmodels.worker_1_spawn_egg": "Worker 1 Spawn Egg",
+      "entity.insideoutnmodels.worker_7": "Worker 7",
+      "entity.insideoutnmodels.worker_6": "Worker 6",
+      "entity.insideoutnmodels.worker_5": "Worker 5",
+      "entity.insideoutnmodels.worker_4": "Worker 4",
+      "entity.insideoutnmodels.worker_9": "Worker 9",
+      "entity.insideoutnmodels.worker_8": "Worker 8",
+      "item.insideoutnmodels.worker_6_spawn_egg": "Worker 6 Spawn Egg",
+      "entity.insideoutnmodels.police_1": "Police 1",
+      "entity.insideoutnmodels.police_2": "Police 2",
+      "entity.insideoutnmodels.police_3": "Police 3",
+      "item.insideoutnmodels.worker_8_spawn_egg": "Worker 8 Spawn Egg",
+      "item.insideoutnmodels.police_2_spawn_egg": "Police 2 Spawn Egg",
+      "item.insideoutnmodels.worker_3_spawn_egg": "Worker 3 Spawn Egg",
+      "itemGroup.tabinside_out_models_tab": "Inside Out Models TAB",
+      "item.insideoutnmodels.police_1_spawn_egg": "Police 1 Spawn Egg",
+      "item.insideoutnmodels.worker_5_spawn_egg": "Worker 5 Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Workers",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "insideoutnmodels",
+    "modName": "InsideOutNModels",
+    "version": "1.0.0",
+    "author": "GatoDev",
+    "websiteURL": "https://gato.dev",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Mod developed by GatoDev",
+    "modElementsPackage": "dev.gato.insideoutnmodels",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

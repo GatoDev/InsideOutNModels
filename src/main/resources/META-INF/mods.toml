@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="insideoutnmodels"
+version="1.0.0"
+displayName="InsideOutNModels"
+credits="Mod developed by GatoDev"
+displayURL="https://gato.dev"
+authors="GatoDev"
+
+[[dependencies.insideoutnmodels]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.insideoutnmodels]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
