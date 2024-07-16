@@ -358,6 +358,38 @@
         ]
       },
       "path": "~/Orbs"
+    },
+    {
+      "name": "BlueOrb",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_orb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/insideoutnmodels/models/block/blue_orb.json",
+          "src/main/java/dev/gato/insideoutnmodels/block/BlueOrbBlock.java",
+          "src/main/resources/assets/insideoutnmodels/blockstates/blue_orb.json",
+          "src/main/resources/assets/insideoutnmodels/models/item/blue_orb.json"
+        ]
+      },
+      "path": "~/Orbs"
+    },
+    {
+      "name": "BlueOrbProj",
+      "type": "rangeditem",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_orb_proj",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/insideoutnmodels/models/item/blue_orb_proj.json",
+          "src/main/java/dev/gato/insideoutnmodels/item/BlueOrbProjItem.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/BlueOrbProjRenderer.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/BlueOrbProjEntity.java"
+        ]
+      },
+      "path": "~/Orbs"
     }
   ],
   "variable_elements": [],
@@ -385,6 +417,7 @@
       "subtitles.boom": "",
       "item.insideoutnmodels.bloofy_spawn_egg": "Bloofy Spawn Egg",
       "item.insideoutnmodels.ennui_spawn_egg": "Ennui Spawn Egg",
+      "item.insideoutnmodels.blue_orb_proj": "Red Orb Proj",
       "item.insideoutnmodels.worker_4_spawn_egg": "Worker 4 Spawn Egg",
       "block.insideoutnmodels.red_orb": "Red Orb",
       "item.insideoutnmodels.worker_1_spawn_egg": "Worker 1 Spawn Egg",
@@ -396,6 +429,7 @@
       "entity.insideoutnmodels.worker_4": "Worker 4",
       "entity.insideoutnmodels.worker_9": "Worker 9",
       "entity.insideoutnmodels.worker_8": "Worker 8",
+      "block.insideoutnmodels.blue_orb": "Red Orb",
       "item.insideoutnmodels.worker_6_spawn_egg": "Worker 6 Spawn Egg",
       "entity.insideoutnmodels.police_1": "Police 1",
       "entity.insideoutnmodels.police_2": "Police 2",

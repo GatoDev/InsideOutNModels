@@ -4,6 +4,7 @@
  */
 package dev.gato.insideoutnmodels.init;
 
+import dev.gato.insideoutnmodels.entity.*;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,23 +17,6 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import dev.gato.insideoutnmodels.entity.Worker9Entity;
-import dev.gato.insideoutnmodels.entity.Worker8Entity;
-import dev.gato.insideoutnmodels.entity.Worker7Entity;
-import dev.gato.insideoutnmodels.entity.Worker6Entity;
-import dev.gato.insideoutnmodels.entity.Worker5Entity;
-import dev.gato.insideoutnmodels.entity.Worker4Entity;
-import dev.gato.insideoutnmodels.entity.Worker3Entity;
-import dev.gato.insideoutnmodels.entity.Worker2Entity;
-import dev.gato.insideoutnmodels.entity.Worker1Entity;
-import dev.gato.insideoutnmodels.entity.TNTProjectileEntity;
-import dev.gato.insideoutnmodels.entity.RedOrbProjEntity;
-import dev.gato.insideoutnmodels.entity.PouchyEntity;
-import dev.gato.insideoutnmodels.entity.Police3Entity;
-import dev.gato.insideoutnmodels.entity.Police2Entity;
-import dev.gato.insideoutnmodels.entity.Police1Entity;
-import dev.gato.insideoutnmodels.entity.EnnuiEntity;
-import dev.gato.insideoutnmodels.entity.BloofyEntity;
 import dev.gato.insideoutnmodels.InsideoutnmodelsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -100,8 +84,35 @@ public class InsideoutnmodelsModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<TNTProjectileEntity>> TNT_PROJECTILE = register("projectile_tnt_projectile",
 			EntityType.Builder.<TNTProjectileEntity>of(TNTProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(TNTProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+
 	public static final RegistryObject<EntityType<RedOrbProjEntity>> RED_ORB_PROJ = register("projectile_red_orb_proj",
 			EntityType.Builder.<RedOrbProjEntity>of(RedOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(RedOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+
+	public static final RegistryObject<EntityType<BlueOrbProjEntity>> BLUE_ORB_PROJ = register("projectile_blue_orb_proj",
+			EntityType.Builder.<BlueOrbProjEntity>of(BlueOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(BlueOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PinkOrbProjEntity>> PINK_ORB_PROJ = register("projectile_pink_orb_proj",
+			EntityType.Builder.<PinkOrbProjEntity>of(PinkOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(PinkOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+
+	public static final RegistryObject<EntityType<GreenOrbProjEntity>> GREEN_ORB_PROJ = register("projectile_green_orb_proj",
+			EntityType.Builder.<GreenOrbProjEntity>of(GreenOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(GreenOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+
+	public static final RegistryObject<EntityType<PurpleOrbProjEntity>> PURPLE_ORB_PROJ = register("projectile_purple_orb_proj",
+			EntityType.Builder.<PurpleOrbProjEntity>of(PurpleOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(PurpleOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+
+	public static final RegistryObject<EntityType<YellowOrbProjEntity>> YELLOW_ORB_PROJ = register("projectile_yellow_orb_proj",
+			EntityType.Builder.<YellowOrbProjEntity>of(YellowOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(YellowOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+
+	public static final RegistryObject<EntityType<OrangeOrbProjEntity>> ORANGE_ORB_PROJ = register("projectile_orange_orb_proj",
+			EntityType.Builder.<OrangeOrbProjEntity>of(OrangeOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(OrangeOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+
+	public static final RegistryObject<EntityType<AquaOrbProjEntity>> AQUA_ORB_PROJ = register("projectile_aqua_orb_proj",
+			EntityType.Builder.<AquaOrbProjEntity>of(AquaOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(AquaOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+
+	public static final RegistryObject<EntityType<BlackOrbProjEntity>> BLACK_ORB_PROJ = register("projectile_black_orb_proj",
+			EntityType.Builder.<BlackOrbProjEntity>of(BlackOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(BlackOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+
+	public static final RegistryObject<EntityType<WhiteOrbProjEntity>> WHITE_ORB_PROJ = register("projectile_white_orb_proj",
+			EntityType.Builder.<WhiteOrbProjEntity>of(WhiteOrbProjEntity::new, MobCategory.MISC).setCustomClientFactory(WhiteOrbProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

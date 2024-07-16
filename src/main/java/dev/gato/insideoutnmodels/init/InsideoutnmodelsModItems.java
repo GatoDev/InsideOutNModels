@@ -4,7 +4,8 @@
  */
 package dev.gato.insideoutnmodels.init;
 
-import dev.gato.custom.BlockItems.RedOrbItem;
+import dev.gato.custom.BlockItems.*;
+import dev.gato.insideoutnmodels.item.*;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,9 +15,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
-import dev.gato.insideoutnmodels.item.TNTProjectileItem;
-import dev.gato.insideoutnmodels.item.TNTItem;
-import dev.gato.insideoutnmodels.item.RedOrbProjItem;
 import dev.gato.insideoutnmodels.InsideoutnmodelsMod;
 
 public class InsideoutnmodelsModItems {
@@ -52,9 +50,32 @@ public class InsideoutnmodelsModItems {
 			() -> new ForgeSpawnEggItem(InsideoutnmodelsModEntities.POUCHY, -1, -1, new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
 	public static final RegistryObject<Item> TNT = REGISTRY.register("tnt", () -> new TNTItem());
 	public static final RegistryObject<Item> TNT_PROJECTILE = REGISTRY.register("tnt_projectile", () -> new TNTProjectileItem());
+
+	// * ORBS PROJ:
+
 	public static final RegistryObject<Item> RED_ORB_PROJ = REGISTRY.register("red_orb_proj", () -> new RedOrbProjItem());
+	public static final RegistryObject<Item> BLUE_ORB_PROJ = REGISTRY.register("blue_orb_proj", () -> new BlueOrbProjItem());
+	public static final RegistryObject<Item> PINK_ORB_PROJ = REGISTRY.register("pink_orb_proj", () -> new PinkOrbProjItem());
+	public static final RegistryObject<Item> GREEN_ORB_PROJ = REGISTRY.register("green_orb_proj", () -> new GreenOrbProjItem());
+	public static final RegistryObject<Item> PURPLE_ORB_PROJ = REGISTRY.register("purple_orb_proj", () -> new PurpleOrbProjItem());
+	public static final RegistryObject<Item> YELLOW_ORB_PROJ = REGISTRY.register("yellow_orb_proj", () -> new YellowOrbProjItem());
+	public static final RegistryObject<Item> ORANGE_ORB_PROJ = REGISTRY.register("orange_orb_proj", () -> new OrangeOrbProjItem());
+	public static final RegistryObject<Item> AQUA_ORB_PROJ = REGISTRY.register("aqua_orb_proj", () -> new AquaOrbProjItem());
+	public static final RegistryObject<Item> BLACK_ORB_PROJ = REGISTRY.register("black_orb_proj", () -> new BlackOrbProjItem());
+	public static final RegistryObject<Item> WHITE_ORB_PROJ = REGISTRY.register("white_orb_proj", () -> new WhiteOrbProjItem());
+
 
 	// * ORBS:
 
 	public static final RegistryObject<Item> RED_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.RED_ORB.getId().getPath(), () -> new RedOrbItem(InsideoutnmodelsModBlocks.RED_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+
+	public static final RegistryObject<Item> BLUE_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.BLUE_ORB.getId().getPath(), () -> new BlueOrbItem(InsideoutnmodelsModBlocks.BLUE_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> PINK_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.PINK_ORB.getId().getPath(), () -> new PinkOrbItem(InsideoutnmodelsModBlocks.PINK_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> GREEN_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.GREEN_ORB.getId().getPath(), () -> new GreenOrbItem(InsideoutnmodelsModBlocks.GREEN_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> PURPLE_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.PURPLE_ORB.getId().getPath(), () -> new PurpleOrbItem(InsideoutnmodelsModBlocks.PURPLE_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> YELLOW_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.YELLOW_ORB.getId().getPath(), () -> new YellowOrbItem(InsideoutnmodelsModBlocks.YELLOW_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> ORANGE_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.ORANGE_ORB.getId().getPath(), () -> new OrangeOrbItem(InsideoutnmodelsModBlocks.ORANGE_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> AQUA_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.AQUA_ORB.getId().getPath(), () -> new AquaOrbItem(InsideoutnmodelsModBlocks.AQUA_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> BLACK_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.BLACK_ORB.getId().getPath(), () -> new BlackOrbItem(InsideoutnmodelsModBlocks.BLACK_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> WHITE_ORB = REGISTRY.register(InsideoutnmodelsModBlocks.WHITE_ORB.getId().getPath(), () -> new WhiteOrbItem(InsideoutnmodelsModBlocks.WHITE_ORB.get(), new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
 }

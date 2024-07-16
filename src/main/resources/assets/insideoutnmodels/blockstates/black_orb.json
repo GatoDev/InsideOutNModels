@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "insideoutnmodels:block/black_orb"
+    },
+    "facing=east": {
+      "model": "insideoutnmodels:block/black_orb",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "insideoutnmodels:block/black_orb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "insideoutnmodels:block/black_orb",
+      "y": 270
+    }
+  }
+}

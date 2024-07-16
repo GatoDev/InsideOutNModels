@@ -1,0 +1,8 @@
+{
+  "parent": "insideoutnmodels:custom/blockorb",
+  "textures": {
+    "all": "insideoutnmodels:blocks/whiteorb",
+    "particle": "insideoutnmodels:blocks/whiteorb",
+    "1": "insideoutnmodels:blocks/whiteorb"
+  }
+}

@@ -4,28 +4,11 @@
  */
 package dev.gato.insideoutnmodels.init;
 
+import dev.gato.insideoutnmodels.client.renderer.*;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
-
-import dev.gato.insideoutnmodels.client.renderer.Worker9Renderer;
-import dev.gato.insideoutnmodels.client.renderer.Worker8Renderer;
-import dev.gato.insideoutnmodels.client.renderer.Worker7Renderer;
-import dev.gato.insideoutnmodels.client.renderer.Worker6Renderer;
-import dev.gato.insideoutnmodels.client.renderer.Worker5Renderer;
-import dev.gato.insideoutnmodels.client.renderer.Worker4Renderer;
-import dev.gato.insideoutnmodels.client.renderer.Worker3Renderer;
-import dev.gato.insideoutnmodels.client.renderer.Worker2Renderer;
-import dev.gato.insideoutnmodels.client.renderer.Worker1Renderer;
-import dev.gato.insideoutnmodels.client.renderer.TNTProjectileRenderer;
-import dev.gato.insideoutnmodels.client.renderer.RedOrbProjRenderer;
-import dev.gato.insideoutnmodels.client.renderer.PouchyRenderer;
-import dev.gato.insideoutnmodels.client.renderer.Police3Renderer;
-import dev.gato.insideoutnmodels.client.renderer.Police2Renderer;
-import dev.gato.insideoutnmodels.client.renderer.Police1Renderer;
-import dev.gato.insideoutnmodels.client.renderer.EnnuiRenderer;
-import dev.gato.insideoutnmodels.client.renderer.BloofyRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class InsideoutnmodelsModEntityRenderers {
@@ -47,6 +30,17 @@ public class InsideoutnmodelsModEntityRenderers {
 		event.registerEntityRenderer(InsideoutnmodelsModEntities.ENNUI.get(), EnnuiRenderer::new);
 		event.registerEntityRenderer(InsideoutnmodelsModEntities.POUCHY.get(), PouchyRenderer::new);
 		event.registerEntityRenderer(InsideoutnmodelsModEntities.TNT_PROJECTILE.get(), TNTProjectileRenderer::new);
+
 		event.registerEntityRenderer(InsideoutnmodelsModEntities.RED_ORB_PROJ.get(), context -> new RedOrbProjRenderer(context, "redorb"));
+
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.BLUE_ORB_PROJ.get(), context -> new BlueOrbProjRenderer(context, "blueorb"));
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.PINK_ORB_PROJ.get(), context -> new PinkOrbProjRenderer(context, "pinkorb"));
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.GREEN_ORB_PROJ.get(), context -> new GreenOrbProjRenderer(context, "greenorb"));
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.PURPLE_ORB_PROJ.get(), context -> new PurpleOrbProjRenderer(context, "purpleorb"));
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.YELLOW_ORB_PROJ.get(), context -> new YellowOrbProjRenderer(context, "yelloworb"));
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.ORANGE_ORB_PROJ.get(), context -> new OrangeOrbProjRenderer(context, "orangeorb"));
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.AQUA_ORB_PROJ.get(), context -> new AquaOrbProjRenderer(context, "aquaorb"));
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.BLACK_ORB_PROJ.get(), context -> new BlackOrbProjRenderer(context, "blackorb"));
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.WHITE_ORB_PROJ.get(), context -> new WhiteOrbProjRenderer(context, "whiteorb"));
 	}
 }

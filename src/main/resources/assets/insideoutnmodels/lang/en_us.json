@@ -34,5 +34,14 @@
   "itemGroup.tabinside_out_models_tab": "Inside Out Models TAB",
   "item.insideoutnmodels.police_1_spawn_egg": "Police 1 Spawn Egg",
   "entity.insideoutnmodels.pouchy": "Pouchy",
-  "item.insideoutnmodels.worker_5_spawn_egg": "Worker 5 Spawn Egg"
+  "item.insideoutnmodels.worker_5_spawn_egg": "Worker 5 Spawn Egg",
+  "block.insideoutnmodels.blue_orb": "Blue Orb",
+  "block.insideoutnmodels.pink_orb": "Pink Orb",
+  "block.insideoutnmodels.green_orb": "Green Orb",
+  "block.insideoutnmodels.purple_orb": "Purple Orb",
+  "block.insideoutnmodels.yellow_orb": "Yellow Orb",
+  "block.insideoutnmodels.orange_orb": "Orange Orb",
+  "block.insideoutnmodels.aqua_orb": "Aqua Orb",
+  "block.insideoutnmodels.black_orb": "Black Orb",
+  "block.insideoutnmodels.white_orb": "White Orb"
 }
