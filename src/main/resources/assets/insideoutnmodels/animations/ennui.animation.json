@@ -334,6 +334,26 @@
 					"rotation": {
 						"vector": ["query.head_pitch", "query.head_yaw", 0]
 					}
+				},
+				"head": {
+					"rotation": {
+						"vector": [22.5, 0, -45]
+					}
+				},
+				"bone4": {
+					"rotation": {
+						"vector": [0, 0, -12.5]
+					}
+				},
+				"bone3": {
+					"position": {
+						"vector": [-0.25, 2, 0]
+					}
+				},
+				"bone5": {
+					"rotation": {
+						"vector": [12.48107, 0.43523, -12.48107]
+					}
 				}
 			}
 		},

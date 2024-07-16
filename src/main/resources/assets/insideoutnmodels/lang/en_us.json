@@ -43,5 +43,7 @@
   "block.insideoutnmodels.orange_orb": "Orange Orb",
   "block.insideoutnmodels.aqua_orb": "Aqua Orb",
   "block.insideoutnmodels.black_orb": "Black Orb",
-  "block.insideoutnmodels.white_orb": "White Orb"
+  "block.insideoutnmodels.white_orb": "White Orb",
+  "key.categories.insideoutnmodels": "Inside Out Keys",
+  "key.insideoutnmodels.talk": "Talk animation"
 }
