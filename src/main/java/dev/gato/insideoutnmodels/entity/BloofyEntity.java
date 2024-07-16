@@ -1,6 +1,8 @@
 
 package dev.gato.insideoutnmodels.entity;
 
+import net.minecraft.world.entity.*;
+import net.minecraft.world.item.Items;
 import software.bernie.geckolib3.util.GeckoLibUtil;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 import software.bernie.geckolib3.core.manager.AnimationData;
@@ -24,13 +26,6 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.Pose;
-import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EntityDimensions;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -144,11 +139,6 @@ public class BloofyEntity extends Monster implements IAnimatable {
 
 	private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
 		if (this.animationprocedure.equals("empty")) {
-			if (this.isShiftKeyDown() || this.isCrouching()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("sneak", EDefaultLoopTypes.LOOP));
-				return PlayState.CONTINUE;
-			}
-
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))) {
 				event.getController().setAnimation(new AnimationBuilder().addAnimation("walk", EDefaultLoopTypes.LOOP));
 				return PlayState.CONTINUE;
@@ -161,7 +151,6 @@ public class BloofyEntity extends Monster implements IAnimatable {
 	}
 
 	private <E extends IAnimatable> PlayState attackingPredicate(AnimationEvent<E> event) {
-
 		if (this.swingTime == 1 && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
 			event.getController().markNeedsReload();
 			event.getController().setAnimation(new AnimationBuilder().addAnimation("attack", EDefaultLoopTypes.PLAY_ONCE));
@@ -169,6 +158,14 @@ public class BloofyEntity extends Monster implements IAnimatable {
 		}
 		return PlayState.CONTINUE;
 	}
+
+	private <E extends IAnimatable> PlayState talkPredicate(AnimationEvent<E> event) {
+		if (this.getItemBySlot(EquipmentSlot.HEAD).getItem() == Items.COAL) {
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("sneak", EDefaultLoopTypes.LOOP));
+			return PlayState.CONTINUE;
+		}
+        return PlayState.STOP;
+    }
 
 	private <E extends IAnimatable> PlayState procedurePredicate(AnimationEvent<E> event) {
 		Entity entity = this;
@@ -220,6 +217,7 @@ public class BloofyEntity extends Monster implements IAnimatable {
 		data.addAnimationController(new AnimationController<>(this, "movement", 4, this::movementPredicate));
 		data.addAnimationController(new AnimationController<>(this, "attacking", 4, this::attackingPredicate));
 		data.addAnimationController(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
+		data.addAnimationController(new AnimationController<>(this, "talk", 4, this::talkPredicate));
 	}
 
 	@Override

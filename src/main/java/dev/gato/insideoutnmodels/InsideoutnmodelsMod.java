@@ -13,6 +13,7 @@
  */
 package dev.gato.insideoutnmodels;
 
+import dev.gato.custom.keybinds.RegisterKeyBinds;
 import software.bernie.geckolib3.GeckoLib;
 
 import org.apache.logging.log4j.Logger;
