@@ -1,0 +1,11 @@
+{
+  "boom": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "insideoutnmodels:boom",
+        "stream": false
+      }
+    ]
+  }
+}

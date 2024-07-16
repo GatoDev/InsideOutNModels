@@ -177,7 +177,8 @@
           "src/main/java/dev/gato/insideoutnmodels/client/renderer/Police1Renderer.java",
           "src/main/resources/assets/insideoutnmodels/models/item/police_1_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Polices"
     },
     {
       "name": "Police2",
@@ -193,7 +194,8 @@
           "src/main/java/dev/gato/insideoutnmodels/client/renderer/Police2Renderer.java",
           "src/main/resources/assets/insideoutnmodels/models/item/police_2_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Polices"
     },
     {
       "name": "Police3",
@@ -209,11 +211,148 @@
           "src/main/java/dev/gato/insideoutnmodels/entity/model/Police3Model.java",
           "src/main/java/dev/gato/insideoutnmodels/entity/Police3Entity.java"
         ]
+      },
+      "path": "~/Polices"
+    },
+    {
+      "name": "Bloofy",
+      "type": "animatedentity",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bloofy",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/BloofyRenderer.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/BloofyModel.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/bloofy_spawn_egg.json",
+          "src/main/java/dev/gato/insideoutnmodels/entity/BloofyEntity.java"
+        ]
       }
+    },
+    {
+      "name": "Ennui",
+      "type": "animatedentity",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ennui",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/entity/EnnuiEntity.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/EnnuiModel.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/EnnuiRenderer.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/ennui_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Pouchy",
+      "type": "animatedentity",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pouchy",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/entity/PouchyEntity.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/PouchyRenderer.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/model/PouchyModel.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/pouchy_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "TNT",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/insideoutnmodels/models/item/tnt.json",
+          "src/main/java/dev/gato/insideoutnmodels/item/TNTItem.java"
+        ]
+      },
+      "path": "~/TNT"
+    },
+    {
+      "name": "TNTProjectile",
+      "type": "rangeditem",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tnt_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/gato/insideoutnmodels/item/TNTProjectileItem.java",
+          "src/main/java/dev/gato/insideoutnmodels/client/renderer/TNTProjectileRenderer.java",
+          "src/main/java/dev/gato/insideoutnmodels/entity/TNTProjectileEntity.java",
+          "src/main/resources/assets/insideoutnmodels/models/item/tnt_projectile.json"
+        ]
+      },
+      "path": "~/TNT"
+    },
+    {
+      "name": "TNTRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TNT"
+    },
+    {
+      "name": "ExplosionParticle",
+      "type": "particle",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "explosion_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/insideoutnmodels/particles/explosion_particle.json",
+          "src/main/java/dev/gato/insideoutnmodels/client/particle/ExplosionParticleParticle.java"
+        ]
+      },
+      "path": "~/TNT"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "boom",
+      "files": [
+        "boom"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.insideoutnmodels.worker_7_spawn_egg": "Worker 7 Spawn Egg",
@@ -223,9 +362,15 @@
       "item.insideoutnmodels.worker_9_spawn_egg": "Worker 9 Spawn Egg",
       "item.insideoutnmodels.worker_2_spawn_egg": "Worker 2 Spawn Egg",
       "item.insideoutnmodels.police_3_spawn_egg": "Police 3 Spawn Egg",
+      "item.insideoutnmodels.tnt": "TNT",
+      "subtitles.boom": "",
+      "item.insideoutnmodels.bloofy_spawn_egg": "Bloofy Spawn Egg",
+      "item.insideoutnmodels.ennui_spawn_egg": "Ennui Spawn Egg",
       "item.insideoutnmodels.worker_4_spawn_egg": "Worker 4 Spawn Egg",
       "item.insideoutnmodels.worker_1_spawn_egg": "Worker 1 Spawn Egg",
       "entity.insideoutnmodels.worker_7": "Worker 7",
+      "entity.insideoutnmodels.ennui": "Ennui",
+      "item.insideoutnmodels.tnt_projectile": "TNT Projectile",
       "entity.insideoutnmodels.worker_6": "Worker 6",
       "entity.insideoutnmodels.worker_5": "Worker 5",
       "entity.insideoutnmodels.worker_4": "Worker 4",
@@ -235,11 +380,14 @@
       "entity.insideoutnmodels.police_1": "Police 1",
       "entity.insideoutnmodels.police_2": "Police 2",
       "entity.insideoutnmodels.police_3": "Police 3",
+      "entity.insideoutnmodels.bloofy": "Bloofy",
       "item.insideoutnmodels.worker_8_spawn_egg": "Worker 8 Spawn Egg",
       "item.insideoutnmodels.police_2_spawn_egg": "Police 2 Spawn Egg",
+      "item.insideoutnmodels.pouchy_spawn_egg": "Pouchy Spawn Egg",
       "item.insideoutnmodels.worker_3_spawn_egg": "Worker 3 Spawn Egg",
       "itemGroup.tabinside_out_models_tab": "Inside Out Models TAB",
       "item.insideoutnmodels.police_1_spawn_egg": "Police 1 Spawn Egg",
+      "entity.insideoutnmodels.pouchy": "Pouchy",
       "item.insideoutnmodels.worker_5_spawn_egg": "Worker 5 Spawn Egg"
     }
   },
@@ -248,6 +396,18 @@
     "children": [
       {
         "name": "Workers",
+        "children": []
+      },
+      {
+        "name": "Polices",
+        "children": []
+      },
+      {
+        "name": "TNT",
+        "children": []
+      },
+      {
+        "name": "Orbs",
         "children": []
       }
     ]

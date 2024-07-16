@@ -18,9 +18,13 @@ import dev.gato.insideoutnmodels.client.renderer.Worker4Renderer;
 import dev.gato.insideoutnmodels.client.renderer.Worker3Renderer;
 import dev.gato.insideoutnmodels.client.renderer.Worker2Renderer;
 import dev.gato.insideoutnmodels.client.renderer.Worker1Renderer;
+import dev.gato.insideoutnmodels.client.renderer.TNTProjectileRenderer;
+import dev.gato.insideoutnmodels.client.renderer.PouchyRenderer;
 import dev.gato.insideoutnmodels.client.renderer.Police3Renderer;
 import dev.gato.insideoutnmodels.client.renderer.Police2Renderer;
 import dev.gato.insideoutnmodels.client.renderer.Police1Renderer;
+import dev.gato.insideoutnmodels.client.renderer.EnnuiRenderer;
+import dev.gato.insideoutnmodels.client.renderer.BloofyRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class InsideoutnmodelsModEntityRenderers {
@@ -38,5 +42,9 @@ public class InsideoutnmodelsModEntityRenderers {
 		event.registerEntityRenderer(InsideoutnmodelsModEntities.POLICE_1.get(), Police1Renderer::new);
 		event.registerEntityRenderer(InsideoutnmodelsModEntities.POLICE_2.get(), Police2Renderer::new);
 		event.registerEntityRenderer(InsideoutnmodelsModEntities.POLICE_3.get(), Police3Renderer::new);
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.BLOOFY.get(), BloofyRenderer::new);
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.ENNUI.get(), EnnuiRenderer::new);
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.POUCHY.get(), PouchyRenderer::new);
+		event.registerEntityRenderer(InsideoutnmodelsModEntities.TNT_PROJECTILE.get(), TNTProjectileRenderer::new);
 	}
 }

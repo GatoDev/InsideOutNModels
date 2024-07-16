@@ -11,6 +11,8 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.item.Item;
 
+import dev.gato.insideoutnmodels.item.TNTProjectileItem;
+import dev.gato.insideoutnmodels.item.TNTItem;
 import dev.gato.insideoutnmodels.InsideoutnmodelsMod;
 
 public class InsideoutnmodelsModItems {
@@ -39,4 +41,11 @@ public class InsideoutnmodelsModItems {
 			() -> new ForgeSpawnEggItem(InsideoutnmodelsModEntities.POLICE_2, -1, -1, new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
 	public static final RegistryObject<Item> POLICE_3_SPAWN_EGG = REGISTRY.register("police_3_spawn_egg",
 			() -> new ForgeSpawnEggItem(InsideoutnmodelsModEntities.POLICE_3, -1, -1, new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> BLOOFY_SPAWN_EGG = REGISTRY.register("bloofy_spawn_egg",
+			() -> new ForgeSpawnEggItem(InsideoutnmodelsModEntities.BLOOFY, -1, -1, new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> ENNUI_SPAWN_EGG = REGISTRY.register("ennui_spawn_egg", () -> new ForgeSpawnEggItem(InsideoutnmodelsModEntities.ENNUI, -1, -1, new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> POUCHY_SPAWN_EGG = REGISTRY.register("pouchy_spawn_egg",
+			() -> new ForgeSpawnEggItem(InsideoutnmodelsModEntities.POUCHY, -1, -1, new Item.Properties().tab(InsideoutnmodelsModTabs.TAB_INSIDE_OUT_MODELS_TAB)));
+	public static final RegistryObject<Item> TNT = REGISTRY.register("tnt", () -> new TNTItem());
+	public static final RegistryObject<Item> TNT_PROJECTILE = REGISTRY.register("tnt_projectile", () -> new TNTProjectileItem());
 }

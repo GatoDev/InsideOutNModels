@@ -33,6 +33,7 @@ import java.util.function.Function;
 import java.util.function.BiConsumer;
 
 import dev.gato.insideoutnmodels.init.InsideoutnmodelsModTabs;
+import dev.gato.insideoutnmodels.init.InsideoutnmodelsModParticleTypes;
 import dev.gato.insideoutnmodels.init.InsideoutnmodelsModItems;
 import dev.gato.insideoutnmodels.init.InsideoutnmodelsModEntities;
 
@@ -51,6 +52,7 @@ public class InsideoutnmodelsMod {
 		InsideoutnmodelsModItems.REGISTRY.register(bus);
 		InsideoutnmodelsModEntities.REGISTRY.register(bus);
 
+		InsideoutnmodelsModParticleTypes.REGISTRY.register(bus);
 		GeckoLib.initialize();
 	}
 

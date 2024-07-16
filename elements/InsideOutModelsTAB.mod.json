@@ -4,7 +4,7 @@
   "definition": {
     "name": "Inside Out Models TAB",
     "icon": {
-      "value": "Blocks.SLIME_BLOCK"
+      "value": "CUSTOM:TNT"
     },
     "showSearch": false
   }

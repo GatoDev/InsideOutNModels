@@ -25,9 +25,13 @@ import dev.gato.insideoutnmodels.entity.Worker4Entity;
 import dev.gato.insideoutnmodels.entity.Worker3Entity;
 import dev.gato.insideoutnmodels.entity.Worker2Entity;
 import dev.gato.insideoutnmodels.entity.Worker1Entity;
+import dev.gato.insideoutnmodels.entity.TNTProjectileEntity;
+import dev.gato.insideoutnmodels.entity.PouchyEntity;
 import dev.gato.insideoutnmodels.entity.Police3Entity;
 import dev.gato.insideoutnmodels.entity.Police2Entity;
 import dev.gato.insideoutnmodels.entity.Police1Entity;
+import dev.gato.insideoutnmodels.entity.EnnuiEntity;
+import dev.gato.insideoutnmodels.entity.BloofyEntity;
 import dev.gato.insideoutnmodels.InsideoutnmodelsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -81,6 +85,20 @@ public class InsideoutnmodelsModEntities {
 			EntityType.Builder.<Police3Entity>of(Police3Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(Police3Entity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BloofyEntity>> BLOOFY = register("bloofy",
+			EntityType.Builder.<BloofyEntity>of(BloofyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BloofyEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<EnnuiEntity>> ENNUI = register("ennui",
+			EntityType.Builder.<EnnuiEntity>of(EnnuiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EnnuiEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PouchyEntity>> POUCHY = register("pouchy",
+			EntityType.Builder.<PouchyEntity>of(PouchyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PouchyEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TNTProjectileEntity>> TNT_PROJECTILE = register("projectile_tnt_projectile",
+			EntityType.Builder.<TNTProjectileEntity>of(TNTProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(TNTProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -101,6 +119,9 @@ public class InsideoutnmodelsModEntities {
 			Police1Entity.init();
 			Police2Entity.init();
 			Police3Entity.init();
+			BloofyEntity.init();
+			EnnuiEntity.init();
+			PouchyEntity.init();
 		});
 	}
 
@@ -118,5 +139,8 @@ public class InsideoutnmodelsModEntities {
 		event.put(POLICE_1.get(), Police1Entity.createAttributes().build());
 		event.put(POLICE_2.get(), Police2Entity.createAttributes().build());
 		event.put(POLICE_3.get(), Police3Entity.createAttributes().build());
+		event.put(BLOOFY.get(), BloofyEntity.createAttributes().build());
+		event.put(ENNUI.get(), EnnuiEntity.createAttributes().build());
+		event.put(POUCHY.get(), PouchyEntity.createAttributes().build());
 	}
 }

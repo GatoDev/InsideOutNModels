@@ -13,9 +13,12 @@ import dev.gato.insideoutnmodels.entity.Worker4Entity;
 import dev.gato.insideoutnmodels.entity.Worker3Entity;
 import dev.gato.insideoutnmodels.entity.Worker2Entity;
 import dev.gato.insideoutnmodels.entity.Worker1Entity;
+import dev.gato.insideoutnmodels.entity.PouchyEntity;
 import dev.gato.insideoutnmodels.entity.Police3Entity;
 import dev.gato.insideoutnmodels.entity.Police2Entity;
 import dev.gato.insideoutnmodels.entity.Police1Entity;
+import dev.gato.insideoutnmodels.entity.EnnuiEntity;
+import dev.gato.insideoutnmodels.entity.BloofyEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -100,6 +103,27 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof Police3Entity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BloofyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof EnnuiEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PouchyEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
